@@ -22,7 +22,7 @@ class InscriptionManager {
         // Requête SQL pour insérer un nouvel utilisateur
         $sql = "INSERT INTO user (logname, logemail, logpass) VALUES ('$name', '$email', '$password')";
         if ($this->conn->query($sql) === TRUE) {
-            header("Location: page.php");
+            header("Location: acceuil.php");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . $this->conn->error;

@@ -28,7 +28,7 @@ class ConnexionManager {
             $row = $result->fetch_assoc();
             $_SESSION["userId"] = $row["id"];
             $_SESSION["logname"] = $row["logname"];
-            header("Location: page.php");
+            header("Location: acceuil.php");
             exit();
         } else {
             echo "Invalid email or password.";
