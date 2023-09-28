@@ -1,4 +1,5 @@
 <?php
+session_start();
 class InscriptionManager {
     private $conn;
 
@@ -35,7 +36,7 @@ class InscriptionManager {
     }
 }
 
-session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["inscription"])) {
     // Récupérez les données du formulaire
     $name = $_POST["logname"];

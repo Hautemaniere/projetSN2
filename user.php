@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <link rel="stylesheet" href="./stylee.css">
 <svg style="display:none;">
   <symbol id="logo" viewBox="0 0 140 59">
@@ -96,7 +96,7 @@
     </button>
     <ul class="admin-menu">
       <li class="menu-heading">
-        <h3>Admin</h3>
+      <h3>Admin<?php echo  $_SESSION["userId"]?></h3>
       </li>
       <li>
         <a href="acceuil.php">

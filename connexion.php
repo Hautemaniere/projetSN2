@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 class ConnexionManager {
     private $conn;
 
@@ -23,10 +25,10 @@ class ConnexionManager {
         $sql = "SELECT * FROM user WHERE logemail='$email' AND logpass='$password'";
         $result = $this->conn->query($sql);
 
-        // Si l'utilisateur est trouvé, redirigez-le vers page.php
+        // Si l'utilisateur est trouvé, redirigez-le vers acceuil.php et stockez son ID dans une variable de session
         if ($result->num_rows == 1) {
             $row = $result->fetch_assoc();
-            $_SESSION["userId"] = $row["id"];
+            $_SESSION["userId"] = $row["id"]; // Stockez l'ID dans une variable de session
             $_SESSION["logname"] = $row["logname"];
             header("Location: acceuil.php");
             exit();
@@ -41,7 +43,6 @@ class ConnexionManager {
     }
 }
 
-session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["connexion"])) {
     // Récupérez les données du formulaire
     $email = $_POST["logemail"];

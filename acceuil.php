@@ -93,7 +93,7 @@
     </button>
     <ul class="admin-menu">
       <li class="menu-heading">
-        <h3>Admin</h3>
+        <h3>Admin<?php echo  $_SESSION["userId"]?></h3>
       </li>
       <li>
         <a href="acceuil.php">
@@ -142,8 +142,10 @@
     </form>
     <div class="admin-profile">
       <span class="greeting">Hello admin</span>
+      
       <div class="notifications">
         <span class="badge">1</span>
+        
         <svg>
           <use xlink:href="#users"></use>
         </svg>
