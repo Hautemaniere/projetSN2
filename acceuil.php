@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <link rel="stylesheet" href="./stylee.css">
 <svg style="display:none;">
   <symbol id="logo" viewBox="0 0 140 59">
@@ -84,10 +84,7 @@
 </svg>
 <header class="page-header">
   <nav>
-    <a href="#0" aria-label="forecastr logo" class="logo">
-      <svg width="140" height="49">
-        <use xlink:href="#logo"></use>
-      </svg>
+    
     </a>
     <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
       <svg width="20" height="20" aria-hidden="true">
@@ -99,7 +96,7 @@
         <h3>Admin</h3>
       </li>
       <li>
-        <a href="#0">
+        <a href="acceuil.php">
           <svg>
             <use xlink:href="#pages"></use>
           </svg>
@@ -114,65 +111,7 @@
           <span>Users</span>
         </a>
       </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#trends"></use>
-          </svg>
-          <span>Trends</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#collection"></use>
-          </svg>
-          <span>Collection</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#comments"></use>
-          </svg>
-          <span>Comments</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#appearance"></use>
-          </svg>
-          <span>Appearance</span>
-        </a>
-      </li>
-      <li class="menu-heading">
-        <h3>Settings</h3>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#settings"></use>
-          </svg>
-          <span>Settings</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#options"></use>
-          </svg>
-          <span>Options</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#charts"></use>
-          </svg>
-          <span>Charts</span>
-        </a>
-      </li>
+      
       <li>
         <div class="switch">
           <input type="checkbox" id="mode" checked>

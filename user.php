@@ -99,7 +99,7 @@
         <h3>Admin</h3>
       </li>
       <li>
-        <a href="#0">
+        <a href="acceuil.php">
           <svg>
             <use xlink:href="#pages"></use>
           </svg>
@@ -114,65 +114,7 @@
           <span>Users</span>
         </a>
       </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#trends"></use>
-          </svg>
-          <span>Trends</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#collection"></use>
-          </svg>
-          <span>Collection</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#comments"></use>
-          </svg>
-          <span>Comments</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#appearance"></use>
-          </svg>
-          <span>Appearance</span>
-        </a>
-      </li>
-      <li class="menu-heading">
-        <h3>Settings</h3>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#settings"></use>
-          </svg>
-          <span>Settings</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#options"></use>
-          </svg>
-          <span>Options</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <svg>
-            <use xlink:href="#charts"></use>
-          </svg>
-          <span>Charts</span>
-        </a>
-      </li>
+      
       <li>
         <div class="switch">
           <input type="checkbox" id="mode" checked>
