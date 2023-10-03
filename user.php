@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start();
+$_SESSION['user_id'] = $row['id']; ?>
+
 <link rel="stylesheet" href="./stylee.css">
 <svg style="display:none;">
   <symbol id="logo" viewBox="0 0 140 59">
@@ -84,11 +86,7 @@
 </svg>
 <header class="page-header">
   <nav>
-    <a href="#0" aria-label="forecastr logo" class="logo">
-      <svg width="140" height="49">
-        <use xlink:href="#logo"></use>
-      </svg>
-    </a>
+    
     <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
       <svg width="20" height="20" aria-hidden="true">
         <use xlink:href="#down"></use>
@@ -114,7 +112,14 @@
           <span>Users</span>
         </a>
       </li>
-      
+      <li>
+      <a href="deco.php">
+        <svg>
+          <use xlink:href="#users"></use>
+         </svg>
+        <span>Déconnexion</span>
+      </a>
+      </li>
       <li>
         <div class="switch">
           <input type="checkbox" id="mode" checked>

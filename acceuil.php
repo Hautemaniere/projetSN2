@@ -1,4 +1,5 @@
-<?php session_start(); ?>
+<?php session_start();
+$_SESSION['user_id'] = $row['id']; ?>
 <link rel="stylesheet" href="./stylee.css">
 <svg style="display:none;">
   <symbol id="logo" viewBox="0 0 140 59">
@@ -110,6 +111,14 @@
           </svg>
           <span>Users</span>
         </a>
+      </li>
+      <li>
+      <a href="deco.php">
+        <svg>
+          <use xlink:href="#users"></use>
+         </svg>
+        <span>Déconnexion</span>
+      </a>
       </li>
       
       <li>

@@ -17,7 +17,7 @@
         }).addTo(map);
 
         L.marker([49.8951, 2.3022]).addTo(map) // Coordonnées d'Amiens
-            .bindPopup('Je suis gay .')
+            .bindPopup('AMIENS.')
             .openPopup();
     </script>
 </body>
