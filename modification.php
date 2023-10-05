@@ -113,7 +113,7 @@ $_SESSION['user_id'] = $row['id']; ?>
         </a>
       </li>
       <li>
-        <a href="modification.php">
+        <a href="user.php">
           <svg>
             <use xlink:href="#users"></use>
           </svg>
@@ -171,7 +171,7 @@ $_SESSION['user_id'] = $row['id']; ?>
   </section>
   <section class="grid">
     
-    <div><article><?php include 'map.php'; ?></article></div>
+    <div><article><?php include 'affiche.php'; ?></article></div>
 
   </section>
   

@@ -94,7 +94,7 @@ $_SESSION['user_id'] = $row['id']; ?>
     </button>
     <ul class="admin-menu">
       <li class="menu-heading">
-      <h3>Admin<?php echo  $_SESSION["userId"]?></h3>
+      <h3>MENU</h3>
       </li>
       <li>
         <a href="acceuil.php">
@@ -109,7 +109,15 @@ $_SESSION['user_id'] = $row['id']; ?>
           <svg>
             <use xlink:href="#users"></use>
           </svg>
-          <span>Users</span>
+          <span>Suppression </span>
+        </a>
+      </li>
+      <li>
+        <a href="modification.php">
+          <svg>
+            <use xlink:href="#users"></use>
+          </svg>
+          <span>Modification</span>
         </a>
       </li>
       <li>
@@ -149,7 +157,7 @@ $_SESSION['user_id'] = $row['id']; ?>
       </button>
     </form>
     <div class="admin-profile">
-      <span class="greeting">Hello admin</span>
+      <span class="greeting">Hello <?php echo  $_SESSION["logname"];?></span>
       <div class="notifications">
         <span class="badge">1</span>
         <svg>

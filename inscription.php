@@ -23,7 +23,7 @@ class InscriptionManager {
 
     public function createUser($name, $email, $password) {
         // Requête SQL pour insérer un nouvel utilisateur
-        $sql = "INSERT INTO user (logname, logemail, logpass) VALUES ('$name', '$email', '$password')";
+        $sql = "INSERT INTO user (logname, logemail, logpass , isAdmin) VALUES ('$name', '$email', '$password', '0')";
         if ($this->conn->query($sql) === TRUE) {
             header("Location: acceuil.php");
             exit();
