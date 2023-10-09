@@ -1,6 +1,5 @@
 <?php session_start();
 $_SESSION['user_id'] = $row['id']; ?>
-
 <link rel="stylesheet" href="./stylee.css">
 <svg style="display:none;">
   <symbol id="logo" viewBox="0 0 140 59">
@@ -87,6 +86,7 @@ $_SESSION['user_id'] = $row['id']; ?>
 <header class="page-header">
   <nav>
     
+    </a>
     <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
       <svg width="20" height="20" aria-hidden="true">
         <use xlink:href="#down"></use>
@@ -94,7 +94,7 @@ $_SESSION['user_id'] = $row['id']; ?>
     </button>
     <ul class="admin-menu">
       <li class="menu-heading">
-      <h3>MENU</h3>
+        <h3>MENU</h3>
       </li>
       <li>
         <a href="acceuil.php">
@@ -109,7 +109,7 @@ $_SESSION['user_id'] = $row['id']; ?>
           <svg>
             <use xlink:href="#users"></use>
           </svg>
-          <span>Suppression </span>
+          <span>Suppression</span>
         </a>
       </li>
       <li>
@@ -136,6 +136,7 @@ $_SESSION['user_id'] = $row['id']; ?>
         <span>Déconnexion</span>
       </a>
       </li>
+      
       <li>
         <div class="switch">
           <input type="checkbox" id="mode" checked>
@@ -166,8 +167,10 @@ $_SESSION['user_id'] = $row['id']; ?>
     </form>
     <div class="admin-profile">
       <span class="greeting">Hello <?php echo  $_SESSION["logname"];?></span>
+      
       <div class="notifications">
         <span class="badge">1</span>
+        
         <svg>
           <use xlink:href="#users"></use>
         </svg>
@@ -176,7 +179,7 @@ $_SESSION['user_id'] = $row['id']; ?>
   </section>
   <section class="grid">
     
-    <?php include 'modif.php'; ?>
+    <div><article><?php include 'affichageinfo.php'; ?></article></div>
 
   </section>
   
@@ -188,7 +191,5 @@ $_SESSION['user_id'] = $row['id']; ?>
     <script  src="./scriptt.js"></script>
   </footer>
 </section>
-<?php
 
-?>
 

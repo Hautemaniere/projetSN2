@@ -113,11 +113,19 @@ $_SESSION['user_id'] = $row['id']; ?>
         </a>
       </li>
       <li>
-        <a href="user.php">
+        <a href="modification.php">
           <svg>
             <use xlink:href="#users"></use>
           </svg>
           <span>Modification</span>
+        </a>
+      </li>
+      <li>
+        <a href="admin.php">
+          <svg>
+            <use xlink:href="#users"></use>
+          </svg>
+          <span>administrateur</span>
         </a>
       </li>
       <li>
@@ -171,7 +179,7 @@ $_SESSION['user_id'] = $row['id']; ?>
   </section>
   <section class="grid">
     
-    <div><article><?php include 'affiche.php'; ?></article></div>
+    <div><article><?php include 'affiche2.php'; ?></article></div>
 
   </section>
   

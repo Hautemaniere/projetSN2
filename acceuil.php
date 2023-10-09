@@ -121,6 +121,14 @@ $_SESSION['user_id'] = $row['id']; ?>
         </a>
       </li>
       <li>
+        <a href="admin.php">
+          <svg>
+            <use xlink:href="#users"></use>
+          </svg>
+          <span>administrateur</span>
+        </a>
+      </li>
+      <li>
       <a href="deco.php">
         <svg>
           <use xlink:href="#users"></use>
