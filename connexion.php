@@ -22,7 +22,7 @@ class ConnexionManager {
         }
     }
 
-    public function checkUser($email, $password) {
+    public function Autorisation($email, $password) {
         // Requête SQL pour vérifier l'utilisateur
         $sql = "SELECT * FROM user WHERE logemail='$email' AND logpass='$password'";
         $result = $this->conn->query($sql);
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["connexion"])) {
     $password = $_POST["logpass"];
 
     $connexionManager = new ConnexionManager();
-    $connexionManager->checkUser($email, $password);
+    $connexionManager->Autorisation($email, $password);
     $connexionManager->closeConnection();
 }
 ?>

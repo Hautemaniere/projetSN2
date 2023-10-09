@@ -96,14 +96,7 @@ $_SESSION['user_id'] = $row['id']; ?>
       <li class="menu-heading">
         <h3>MENU</h3>
       </li>
-      <li>
-        <a href="acceuil.php">
-          <svg>
-            <use xlink:href="#pages"></use>
-          </svg>
-          <span>Pages</span>
-        </a>
-      </li>
+      
       <li>
         <a href="user.php">
           <svg>
@@ -121,11 +114,19 @@ $_SESSION['user_id'] = $row['id']; ?>
         </a>
       </li>
       <li>
+        <a href="acceuil.php">
+          <svg>
+            <use xlink:href="#pages"></use>
+          </svg>
+          <span>Pages</span>
+        </a>
+      </li>
+      <li>
         <a href="admin.php">
           <svg>
             <use xlink:href="#users"></use>
           </svg>
-          <span>administrateur</span>
+          <span>Accès Administrateur</span>
         </a>
       </li>
       <li>
