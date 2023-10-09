@@ -177,7 +177,7 @@ $_SESSION['user_id'] = $row['id']; ?>
   </section>
   <section class="grid">
     
-    <?php include 'modif.php'; ?>
+    <?php include 'supprimer.php'; ?>
 
   </section>
   

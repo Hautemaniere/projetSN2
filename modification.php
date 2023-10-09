@@ -180,7 +180,7 @@ $_SESSION['user_id'] = $row['id']; ?>
   </section>
   <section class="grid">
     
-    <div><article><?php include 'affiche.php'; ?></article></div>
+    <div><article><?php include 'modiff.php'; ?></article></div>
 
   </section>
   

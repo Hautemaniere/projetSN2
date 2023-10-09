@@ -35,7 +35,7 @@ class ConnexionManager {
             header("Location: acceuil.php");
             exit();
         } else {
-            echo "Invalid email or password.";
+            echo "mail ou mot de passe incorrect.";
         }
     }
 
